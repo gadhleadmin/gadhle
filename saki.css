@@ -1,0 +1,435 @@
+
+:root
+{
+--dark-background:rgb(53, 53, 53);
+}
+
+body{
+    background-color: var(--dark-background);
+    color: wheat;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(255, 255, 255);
+}
+
+.left-side{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: wheat;
+}
+.left-side img{
+
+width: 80px;
+height: 60px;
+}
+
+
+nav{
+    font-size: 1.5rem;
+    margin-right: 50px;
+    
+}
+
+nav a {
+  color: wheat;
+  text-decoration: none;
+  margin-left: 15px;
+  transition: color 0.3s ease-in, transform 0.3s ease-in;
+  cursor: pointer;
+}
+
+
+nav a:hover {
+  color: rgb(255, 252, 246);
+  text-decoration: underline;
+}
+
+
+
+
+.hero-section{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+   background: radial-gradient(circle at left, rgba(255,255,255,0.8), rgba(0,0,0,0));
+  position: relative;
+} 
+
+
+.hero-section::after{
+
+
+      content: "";
+    align-content: center;
+    position: absolute;
+    inset: 0; /* buuxi container-ka */
+    border-radius: inherit; /* raac geesaha */
+    background: linear-gradient(
+        50deg,
+        rgba(0, 0, 255, 0.1),
+        rgba(0, 0, 0, 0.212)
+    );
+    pointer-events: none; /* si uusan click u qabsan */
+    z-index: 1; 
+}
+
+
+.hero-section img{
+    height:98.7% ;
+    margin-top: 10px;
+}
+
+.hero-section div{
+    text-align: center;
+}
+
+.hero-text {
+gap: 5px;
+
+}
+
+.hero-text h2{
+font-size: 4.5rem;
+
+}
+
+
+.hero-text h3{
+  font-size: 2.5rem;
+  color: whitesmoke;
+}
+
+
+.Porfollia-button {
+  border: none;
+  padding: 15px 55px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.23);
+  font-size: 1.5rem;
+  background-color: rgb(44, 44, 44);
+  color: wheat;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  animation: bounce 2s infinite; /* Bounce animation */
+}
+
+/* Hover effect */
+.Porfollia-button:hover {
+  background-color: rgb(50, 50, 50);
+  transform: translateY(-5px) scale(1.05); /* Hover + bounce */
+  box-shadow: 0px 8px 15px rgba(0,0,0,0.3);
+}
+
+/* Keyframes for bounce */
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+
+
+.about-button{
+border: none;
+padding: 15px 55px;
+border-radius: 10px;
+box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.231);
+font-size: 1.5rem;
+transition: 0.6 ease-in-out;
+background-color: rgb(44, 44, 44);
+color: wheat;
+  animation: pulse 2s infinite;
+}
+.about-button:hover{
+background-color: rgb(50, 50, 50);
+transform: translateY(-2px);
+}
+
+
+
+.Porfollia{
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+
+.Porfollia-content{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 20px;
+   margin: 20px;
+}
+
+.Porfollia-items
+{
+  position: relative;
+   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.231);
+   padding: 20px 0px;
+   border-radius: 20px;
+   transition: 0.3 ease-in-out;
+   justify-items: center;
+   text-align: center;
+   line-height: 1.6px;
+   width: 400px;
+}
+
+.Porfollia-items:hover
+{
+     box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.231);
+transform: translateY(-1px);
+}
+
+/* Overlay gradient */
+.Porfollia-items::after {
+    content: "blue";
+    align-content: center;
+    position: absolute;
+    inset: 0; /* buuxi container-ka */
+    border-radius: inherit; /* raac geesaha */
+    background: linear-gradient(
+        30deg,
+        rgba(60, 187, 255, 0.363),
+        rgba(255, 0, 0, 0.178)
+    );
+    pointer-events: none; /* si uusan click u qabsan */
+    z-index: 1; 
+}
+
+
+
+.Porfollia-items img
+{
+
+min-width: 300px;
+height: 200px;
+border-radius: 20px;
+padding: 10px;
+}
+
+.Porfollia-items img:hover
+{
+transform: scale(1.05);
+}
+
+.Porfollia-items h3
+{
+font-size: 2rem;
+}
+.Porfollia-items p
+{
+font-weight:100;
+font-size: 0.9rem;
+line-height: 1.6;
+}
+
+.Porfollia-items button
+{
+ padding: 10px 55px;
+ border-radius: 12px;
+ border: none;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.231);
+  font-size: 1.5rem;
+  transition: 0.6 ease-in;
+  cursor: pointer;
+  background-color: rgb(44, 44, 44);
+  border: 1px solid wheat;
+  color: wheat;
+  font-family: Verdana;
+  font-size: 1rem;
+}
+
+.Porfollia-items button:hover
+{
+  transform: scale(1.1);
+    box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.073);
+}
+
+
+
+
+.transform{
+    background:
+    linear-gradient(50deg, rgba(0,0,255,0.5), rgba(255,0,0,0.5)),
+    url("./phpt/woman-learning-to-code-1.png");
+  
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+
+    height: 60vh;
+    align-content: center;
+    text-align: center;
+}
+
+.transform h3{
+    font-size: 3rem;
+}
+
+.transform p{
+    font-size: 1.5rem;
+}
+
+.get-button{
+    font-size: 1rem;
+    padding: 10px 55px;
+    border-radius: 12px;
+    transition: 0.3s ease-in-out;
+    animation: bounce 2s infinite; /* Bounce animation */
+}
+
+.transform button:hover{
+transform: translateY(-5px);
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+
+.Services-button{
+    font-size: 1rem;
+    padding: 10px 55px;
+    border: none;
+    border-radius: 12px;
+    transition: 0.3s ease-in-out;
+
+}
+
+.Services-button:hover{
+transform: translateY(-5px);
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer img{
+    width: 30px;
+}
+
+
+@media screen and (max-width:900px){
+
+  nav {
+    display: none;
+  }
+
+  .left-side img{
+
+width: 30px;
+height: 30px;
+}
+    
+.left-side h1{
+  font-size: 1.2rem;
+}
+.hero-section{
+    display: flex;
+    flex-wrap: wrap;
+
+
+} 
+.hero-section img{
+    height:50% ;
+    margin-top: 10px;
+}
+
+.hero-section div{
+    text-align: center;
+}
+
+.hero-text {
+gap: 5px;
+line-height: 1;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+}
+
+.hero-text h2{
+font-size: 1.5rem;
+}
+.hero-text h3{
+  font-size: 1rem;
+  color:azure;
+}
+
+
+
+.Porfollia-button {
+  padding: 5px 15px;
+  font-size: 1rem;
+   border-radius: 5px;
+}
+
+.about-button{
+  padding: 5px 15px;
+  font-size: 1rem;
+   border-radius: 5px;
+}
+
+.Porfollia{
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+
+.Porfollia-content{
+   display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+
+.Porfollia-items
+{
+   box-shadow: 0px 4px 6px rgba(235, 235, 235, 0.231);
+   width: 400px;
+   padding: 20px 0px;
+   border-radius: 20px;
+   transition: 0.3 ease-in-out;
+   justify-items: center;
+   text-align: center;
+   line-height: 1.6px;
+}
+
+
+.Porfollia-items h3
+{
+font-size: 1.5rem;
+}
+.Porfollia-items p
+{
+font-weight:100;
+font-size: 0.8rem;
+line-height: 1.6;
+}
+
+.Porfollia-items button
+{
+ padding: 5px 15px;
+ border-radius: 5px;
+ font-size: 1rem;
+}
+
+.transform h3{
+    font-size: 1.5rem;
+}
+
+.transform p{
+    font-size: 0.9rem;
+}
+
+}

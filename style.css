@@ -1,0 +1,115 @@
+body {
+    font-family: 'Verdana', sans-serif; 
+    line-height: 1.6; 
+    background-color: rgb(3, 176, 176);
+    color: #333; 
+    margin: 0; /* Ka saar margin-ka default-ka ah ee body-ga */
+
+}
+
+ p {
+color: #333;
+}
+
+
+
+#account-type{
+    margin: 20px;
+    padding: 7px 15px;
+    border-radius: 10px;
+}
+/*dashbourka guud waxa uuu ka kooban yahay laba qaybood*/
+.main-dash{
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    height: 100vh;
+}
+/*sidebar*/
+.sidebar{
+    background-color: rgb(58, 203, 203);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 20px;
+}
+.sidebar hr{
+    background-color: black;
+    color: black;
+}
+.dash-head{
+    display: flex;
+    padding: 10px;
+}
+
+.dash-head h2{
+    font-size: 18px;
+}
+
+.dash-content{
+   margin-right: 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.dash-content ul{
+gap: 20px;
+list-style: none;
+}
+
+.dash-content li{
+    background-color: rgb(3, 176, 176);
+    padding: 5px 25px;
+    font-size: 16px; 
+    cursor: pointer;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    transition: 0.2s;
+}
+.dash-content li:hover{
+    background-color: rgb(3, 219, 219);
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+/*maindashboudka*/
+.main-container{
+    text-align:center;
+}
+
+.flex-cards{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap:  20px;
+   
+}
+.card-item{
+text-align: center;
+margin: 20px;
+border-radius: 20px;
+box-shadow: 1px 0px 9px;
+
+}
+
+.card-item img {
+    border-radius: 20px;
+   padding: 5px;
+   width:96%;
+   height: 300px;
+}
+
+.buttons{
+padding: 10px;
+}
+
+.buttons a {
+text-decoration: none;
+padding: 5px 15px;
+border-radius: 10px;
+background-color: rgb(44, 111, 255);
+color: #ffffff;
+
+}
+.buttons h3{
+text-align: left;
+margin: 10px;
+}

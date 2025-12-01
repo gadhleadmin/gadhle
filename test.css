@@ -1,0 +1,78 @@
+
+body{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background:
+    linear-gradient(
+    120deg,
+    blue 46%,
+    rgb(126, 126, 253) 49%,
+    white 100%
+    );
+
+}
+
+.main-content{
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+gap: 20px;
+
+}
+
+.card-container1, .card-container2{
+    display: flex; /* ⬅️ Wuxuu beddelay grid */
+    flex-wrap: wrap; /* Waa muhiim si ay kaararku hoos ugu dhacaan */
+    gap: 20px;
+    /* width: 100%; (Ama sideyda ku jirto Media Query-ga gudaha) */
+    justify-content: center; /* Hubi in kaararku dhexda ka xaraysan yihiin */
+}
+
+.card-item1{
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.19);
+border-radius: 15px;
+padding: 10px 15px;
+cursor: pointer;
+background-color: rgb(231, 250, 250);
+}
+
+.card-item1:hover {
+background-color: rgb(177, 251, 251);
+}
+
+.card-item1:first-child {
+background-color: rgb(133, 255, 255);
+}
+
+/*cardka wayn ee labaad*/
+
+
+.card-item2{
+box-shadow: 0 4px 6px rgba(255, 0, 0, 0.19);
+border-radius: 15px;
+padding: 10px 15px;
+cursor: pointer;
+background-color: rgb(255, 178, 178);
+}
+
+.card-item2:hover {
+background-color: rgb(255, 130, 130);
+}
+
+.card-item2:first-child {
+background-color: rgb(255, 133, 133);
+}
+
+
+
+@media screen and (min-width:900px) {
+
+    .card-container1{
+          grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .card-container2 {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    
+}

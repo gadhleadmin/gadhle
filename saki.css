@@ -190,7 +190,7 @@ transform: translateY(-1px);
 
 /* Overlay gradient */
 .Porfollia-items::after {
-    content: "blue";
+    content: "";
     align-content: center;
     position: absolute;
     inset: 0; /* buuxi container-ka */

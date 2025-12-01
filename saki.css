@@ -198,7 +198,7 @@ transform: translateY(-1px);
     background: linear-gradient(
         30deg,
         rgba(60, 187, 255, 0.363),
-        rgba(255, 0, 0, 0.178)
+        rgba(255, 0, 0, 0.178) 
     );
     pointer-events: none; /* si uusan click u qabsan */
     z-index: 1; 

@@ -60,8 +60,8 @@ nav a:hover {
     justify-content: center;
     align-items: center;
     gap: 30px;
-   background: radial-gradient(circle at left, rgba(255,255,255,0.8), rgba(0,0,0,0));
-  position: relative;
+   background: linear-gradient(90deg, rgb(255, 255, 255), rgba(255, 0, 0, 0));
+   position: relative;
 } 
 
 

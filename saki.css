@@ -84,8 +84,9 @@ nav a:hover {
 
 
 .hero-section img{
-    height:98.7% ;
+    height:70.7% ;
     margin-top: 10px;
+    width: 40%;
 }
 
 .hero-section div{
@@ -99,7 +100,7 @@ line-height: 1.6;
 }
 
 .hero-text h2{
-font-size: 4.5rem;
+font-size: 4.2rem;
 }
 
 
@@ -209,8 +210,8 @@ transform: translateY(-1px);
 .Porfollia-items img
 {
 
-min-width: 300px;
-height: 200px;
+min-width: 220px;
+height: 180px;
 border-radius: 20px;
 padding: 10px;
 }
@@ -473,21 +474,6 @@ height: 30px;
 
 } 
 
-
-.hero-section::after{
-      content: "";
-    align-content: center;
-    position: absolute;
-    inset: 0; /* buuxi container-ka */
-    border-radius: inherit; /* raac geesaha */
-    background: transparent;
-    pointer-events: none; /* si uusan click u qabsan */
-    z-index: 1; 
-}
-
-
-
-} 
 .hero-section img{
     height:50% ;
     margin-top: 10px;
@@ -517,8 +503,6 @@ font-size: 1.5rem;
 .hero-text p{
   font-size: 0.8rem;
 }
-
-
 
 
 .Porfollia-button {
@@ -588,3 +572,4 @@ line-height: 1.6;
     font-size: 0.9rem;
 }
 
+}

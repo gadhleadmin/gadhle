@@ -465,6 +465,27 @@ height: 30px;
 } 
 
 
+.hero-section{
+     display: flex;
+    flex-wrap: wrap;
+    gap:5px;
+   background: linear-gradient(190deg, rgba(255, 255, 255, 0.765) 20%, rgb(53, 53, 53), rgb(53, 53, 53));
+
+} 
+
+
+.hero-section::after{
+      content: "";
+    align-content: center;
+    position: absolute;
+    inset: 0; /* buuxi container-ka */
+    border-radius: inherit; /* raac geesaha */
+    background: transparent;
+    pointer-events: none; /* si uusan click u qabsan */
+    z-index: 1; 
+}
+
+
 
 } 
 .hero-section img{

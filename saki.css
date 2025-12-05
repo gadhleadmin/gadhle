@@ -261,6 +261,22 @@ footer{
    RESPONSIVE
    =========================== */
 @media (max-width: 900px){
+
+  body {
+  background: #ffffff;
+  color: #1a00af;
+}
+
+header{
+    background: #ffffff;
+  color: #1a00af;
+}
+.Porfollia{
+    background: #ffffff;
+  color: #1a00af;
+
+}
+
   .nav-links {
     display: none;
   }

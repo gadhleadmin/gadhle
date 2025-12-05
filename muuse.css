@@ -1,0 +1,239 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(19, 46, 84);
+    color: whitesmoke;
+}
+
+header{
+    background-color:  rgb(14, 36, 67);
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    border: 1px solid rgba(255, 255, 255, 0.137);
+    z-index: 200;
+   
+}
+
+.left-side{
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 5px;
+}
+
+.left-side img{
+width: 60px; 
+object-fit: contain;
+}
+
+.left-side h1{
+font-family: Verdana;
+font-weight: 200;
+font-size: 1.5rem;
+}
+
+nav a{
+    color: whitesmoke;
+     text-decoration: none;
+     margin-left: 5px;
+    
+}
+
+.hero-section{
+min-height: 100vh;
+display: flex;
+align-items: center;
+position: relative;
+padding: 140px 40px 40px;
+background: linear-gradient(30deg, rgba(0, 0, 255, 0) , white);
+margin-bottom: 30px;
+overflow: hidden;
+}
+
+
+.hero-section > img{
+position: absolute;
+right: 0;
+width: 50%;
+height: 100%;
+opacity: .85;
+object-fit: cover;
+z-index: 0;
+}
+
+.hero-text{
+    color: aliceblue;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    max-width: 60%;
+    line-height: 1.6;
+}
+
+.hero-text h2{
+ font-size: 4rem;
+}
+
+.hero-text h3 {
+    font-size: 2rem;
+    color: rgb(28, 61, 118);
+ 
+}
+
+.hero-text p{
+ line-height: 1.6;
+ font-size:  1rem;
+ font-weight: 200;
+}
+
+.hero-buttons{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    gap: 10px;
+}
+.about-button{
+    border-radius: 5px;
+    padding: 9px 35px;
+    border: none;
+  
+}
+
+.about-button:hover{
+ background-color: transparent;
+ border:1px solid white;
+}
+
+.Porfollia-button{
+      border-radius: 5px;
+      padding: 9px 35px;
+      border: none;
+}
+
+.Porfollia-button:hover{
+ background-color: transparent;
+ border:1px solid white;
+}
+
+
+.Porfollia{
+min-height: 70vh;
+margin: 10px;
+}
+
+.Porfollia-content{
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-gap: 20px;
+box-sizing: border-box;
+
+}
+
+.Porfollia-items{
+text-align: center;
+width: 100%;
+box-shadow: 0px 2px 4px rgba(255, 255, 255, 0.178);
+border-radius: 15px;
+line-height: 1.6;
+padding: 20px 0px;
+transition: 0.6 ease-in-out;
+}
+
+.Porfollia-items:hover{
+    transform: translateY(-2px);
+}
+
+.Porfollia-items img{
+border-radius: 15px;
+width: 100%;
+height: 200px;
+}
+
+.Porfollia-items button{
+     border-radius: 5px;
+      padding: 9px 35px;
+      border: none;
+      background-color: transparent;
+      box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.055);
+      border: 0.5px solid white;
+      color: whitesmoke;
+}
+
+.Porfollia-items button:hover{
+transform: scale(1.1);
+}
+
+
+.transform{
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(50deg , rgba(15, 15, 61, 0.71) ,rgba(98, 9, 79, 0.582)), url(./phpt/woman-learning-to-code-1.png);
+    background-size: cover;
+    line-height: 1.6;
+
+}
+
+.transform h3{
+    font-size: 3rem;
+}
+
+.buttons{
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+
+}
+
+
+
+.get-button{
+    padding: 7px 30px;
+    border: 1px solid white;
+    border-radius: 7px;
+    box-shadow: 0px 2px 4px rgba(255, 255, 255, 0.425);
+    background: transparent;
+    color: aliceblue;
+}
+
+.Services-button{
+    padding: 7px 30px;
+    border: none;
+    border-radius: 7px;
+    box-shadow: 0px 2px 4px rgba(255, 255, 255, 0.425);
+}
+
+
+footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width:900px){
+
+nav{
+    display: none;
+}
+
+.Porfollia-content{
+    display: flex;
+    flex-wrap: wrap;
+}
+.buttons{
+      display: flex;
+    flex-wrap: wrap;
+}
+}
+    
